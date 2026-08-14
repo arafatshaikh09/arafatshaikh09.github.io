@@ -1318,3 +1318,366 @@ grid-template-columns:1fr;
     }
 
 }
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        width: 92%;
+        padding: 20px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        width: 90%;
+        min-height: auto;
+        padding: 70px 0 90px;
+
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 9vw, 52px);
+        white-space: normal;
+    }
+
+    .hero h3 {
+        font-size: 25px;
+        height: auto;
+    }
+
+    .description {
+        max-width: 650px;
+        margin: 20px auto;
+        font-size: 15px;
+    }
+
+    .hero-tags {
+        justify-content: center;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .socials {
+        margin-top: 30px;
+    }
+
+    .profile-card {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .stats {
+        padding: 75px 7%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .stat-card {
+        padding: 30px 15px;
+    }
+
+    .stat-card h2 {
+        font-size: 2.3rem;
+    }
+
+    .stat-card p {
+        font-size: .9rem;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about {
+        padding: 75px 7%;
+    }
+
+    .about-header h2 {
+        font-size: 2.1rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cards {
+        margin-top: 10px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects {
+        padding: 75px 7%;
+    }
+
+    .projects-header h2 {
+        font-size: 2.1rem;
+    }
+
+    .projects-intro {
+        font-size: .95rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-content {
+        padding: 25px;
+    }
+
+    .project-content p {
+        font-size: .95rem;
+    }
+
+
+    /* ---------- PROJECT IMAGE / ICON ---------- */
+
+    .project-image {
+        height: 180px;
+    }
+
+    .project-image i {
+        font-size: 65px;
+    }
+
+
+    /* ---------- ADDITIONAL PROJECTS ---------- */
+
+    .additional-projects {
+        padding: 75px 7%;
+    }
+
+    .additional-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- CAD SHOWCASE ---------- */
+
+    .cad-showcase {
+        padding: 75px 7%;
+    }
+
+    .cad-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cad-card img {
+        height: 220px;
+    }
+
+
+    /* ---------- BEYOND ENGINEERING ---------- */
+
+    .beyond {
+        padding: 90px 7%;
+    }
+
+    .beyond-header {
+        margin-bottom: 80px;
+    }
+
+    .beyond-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .beyond-header p {
+        font-size: 1rem;
+    }
+
+    .life-card,
+    .life-card.reverse {
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 100px;
+    }
+
+    .life-image {
+        width: 100%;
+    }
+
+    .life-image img {
+        border-radius: 20px;
+    }
+
+    .life-text {
+        text-align: center;
+    }
+
+    .life-text h3 {
+        font-size: 2.2rem;
+    }
+
+    .life-text p {
+        max-width: 100%;
+        font-size: .95rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        width: 90%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-tags span {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .buttons {
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .profile-card {
+        width: 240px;
+        height: 240px;
+    }
+
+
+    /* STATS */
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 25px;
+    }
+
+
+    /* ABOUT */
+
+    .about-header h2,
+    .projects-header h2 {
+        font-size: 1.9rem;
+    }
+
+    .about-text p {
+        font-size: .95rem;
+    }
+
+
+    /* PROJECTS */
+
+    .project-image {
+        height: 160px;
+    }
+
+    .project-image i {
+        font-size: 55px;
+    }
+
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-content p {
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+
+    /* BEYOND */
+
+    .beyond-header h2 {
+        font-size: 2.3rem;
+    }
+
+    .life-text h3 {
+        font-size: 2rem;
+    }
+
+}
